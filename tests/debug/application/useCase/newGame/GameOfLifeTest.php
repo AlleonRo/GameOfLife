@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\debuf\application\useCase\newGame;
+namespace tests\debug\application\useCase\newGame;
 
 use GameofLife\application\useCase\newGame\GameOfLife;
 use GameofLife\domain\entity\Board;
