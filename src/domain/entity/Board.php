@@ -52,7 +52,7 @@ final class Board
     public function addCell(int $x, int $y, Cell $cell)
     {
         if($x >= $this->height || $y >= $this->width){
-            throw new CoordinateNotValid('Max X: '. $this->width-1 .', Max Y: '. $this->height-1);
+            throw new CoordinateNotValid('Max X: '. ($this->width-1) .', Max Y: '. ($this->height-1));
         }
         $this->cells[$x][$y] = $cell;
     }
@@ -66,7 +66,7 @@ final class Board
     public function getCell(int $x, int $y): Cell
     {
         if($x >= $this->height || $y >= $this->width){
-            throw new CoordinateNotValid('Max X: '. $this->width-1 .', Max Y: '. $this->height-1);
+            throw new CoordinateNotValid('Max X: '. ($this->width-1) .', Max Y: '. ($this->height-1));
         }
         return $this->cells[$x][$y];
     }
