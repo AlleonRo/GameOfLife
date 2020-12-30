@@ -1,8 +1,8 @@
 # GameOfLife
-## Install Dependencies
-- composer install
+## Install
+- make build
 ## Execute Tests
-- php vendor/phpunit/phpunit/phpunit
+- make tests
 ## Debug Game
-- php vendor/phpunit/phpunit/phpunit tests\debug\application\useCase\newGame
-- Look at tests/debug/application/useCase/newGame/results
+- Execute tests\debug\application\useCase\newGame\GameOfLife 
+- Look at tests\debug\application\useCase\newGame\results

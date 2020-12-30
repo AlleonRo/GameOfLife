@@ -9,9 +9,18 @@
       "email": "alvaro.leonro@gmail.com"
     }
   ],
+  "require": {
+    "php": ">=7.4.0"
+  },
   "require-dev": {
-    "phpunit/phpunit": "^9.5",
+    "phpunit/phpunit": "^9.0",
     "mockery/mockery": "^1.4"
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
@@ -26,5 +35,8 @@
         "tests"
       ]
     }
+  },
+  "scripts": {
+    "tests": "phpunit"
   }
 }
